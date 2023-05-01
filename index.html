@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="user1">
+    <br>
+    <br>
+    <input type="text" id="user2">
+    <h1 id="result">Result</h1>
+    <button onclick="add()">Add</button>
+    <button onclick="Subtract()">Subtract</button>
+    <button onclick="mult()">Multiply</button>
+    <button onclick="divid()">Divide</button>
+</body>
+<script>
+    function add(){
+        let x = document.getElementById("user1").value;
+        let y = document.getElementById("user2").value;
+        let xx = parseFloat(x);
+        let yy = parseFloat(y);
+        z = xx + yy;
+        document.getElementById("result").innerText=z;
+
+    }
+    function Subtract(){
+        let x = document.getElementById("user1").value;
+        let y = document.getElementById("user2").value;
+        let xx = parseFloat(x);
+        let yy = parseFloat(y);
+        z = xx - yy;
+        document.getElementById("result").innerText=z;
+
+    }
+    function mult(){
+        let x = document.getElementById("user1").value;
+        let y = document.getElementById("user2").value;
+        let xx = parseFloat(x);
+        let yy = parseFloat(y);
+        z = xx * yy;
+        document.getElementById("result").innerText=z;
+
+    }
+    function divid(){
+        let x = document.getElementById("user1").value;
+        let y = document.getElementById("user2").value;
+        let xx = parseFloat(x);
+        let yy = parseFloat(y);
+        z = xx / yy;
+        document.getElementById("result").innerText=z;
+
+    }
+</script>
+</html>
